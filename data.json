@@ -699,6 +699,310 @@
       "code": "def squared(word, size):\n    repeated = word * (size * size)\n    for i in range(size):\n        print(repeated[i * size : (i + 1) * size])\n\nif __name__ == \"__main__\":\n    squared(\"ab\", 3)"
     },
     {
+      "id": "part04-01",
+      "name": "Hello Visual Studio Code",
+      "part": 4,
+      "number": 1,
+      "description": "First exercise in Visual Studio Code",
+      "code": "print(\"Hello Visual Studio Code\")"
+    },
+    {
+      "id": "part04-02",
+      "name": "Line",
+      "part": 4,
+      "number": 2,
+      "description": "Function to print a line of characters",
+      "code": "def line(times, character):\n    if character == \"\":\n        character = \"*\"\n    print(character[0] * times)\n\nif __name__ == \"__main__\":\n    line(5, \"-\")"
+    },
+    {
+      "id": "part04-03",
+      "name": "Box of Hashes",
+      "part": 4,
+      "number": 3,
+      "description": "Function to print a box of hashes using line function",
+      "code": "def line(times, character):\n    if character == \"\":\n        character = \"*\"\n    print(character[0] * times)\n\ndef box_of_hashes(height):\n    i = 0\n    while i < height:\n        line(10, \"#\")\n        i += 1\n\nif __name__ == \"__main__\":\n    box_of_hashes(5)"
+    },
+    {
+      "id": "part04-04",
+      "name": "Square of Hashes",
+      "part": 4,
+      "number": 4,
+      "description": "Function to print a square of hashes",
+      "code": "def line(times, character):\n    if character == \"\":\n        character = \"*\"\n    print(character[0] * times)\n\ndef square_of_hashes(size):\n    i = 0\n    while i < size:\n        line(size, \"#\")\n        i += 1\n\nif __name__ == \"__main__\":\n    square_of_hashes(5)"
+    },
+    {
+      "id": "part04-05",
+      "name": "Square",
+      "part": 4,
+      "number": 5,
+      "description": "Function to print a square of any character",
+      "code": "def line(times, character):\n    if character == \"\":\n        character = \"*\"\n    print(character[0] * times)\n\ndef square(size, character):\n    i = 0\n    while i < size:\n        line(size, character)\n        i += 1\n\nif __name__ == \"__main__\":\n    square(5, \"x\")"
+    },
+    {
+      "id": "part04-06",
+      "name": "Triangle",
+      "part": 4,
+      "number": 6,
+      "description": "Function to print a triangle of hashes",
+      "code": "def line(times, character):\n    if character == \"\":\n        character = \"*\"\n    print(character[0] * times)\n\ndef triangle(size):\n    i = 1\n    while i <= size:\n        line(i, \"#\")\n        i += 1\n\nif __name__ == \"__main__\":\n    triangle(5)"
+    },
+    {
+      "id": "part04-07",
+      "name": "Shape",
+      "part": 4,
+      "number": 7,
+      "description": "Function to print a combined shape",
+      "code": "def line(times, character):\n    if character == \"\":\n        character = \"*\"\n    print(character[0] * times)\n\ndef shape(tri_height, tri_char, rect_height, rect_char):\n    i = 1\n    while i <= tri_height:\n        line(i, tri_char)\n        i += 1\n    j = 0\n    while j < rect_height:\n        line(tri_height, rect_char)\n        j += 1\n\nif __name__ == \"__main__\":\n    shape(5, \"X\", 3, \"*\")"
+    },
+    {
+      "id": "part04-08",
+      "name": "Spruce",
+      "part": 4,
+      "number": 8,
+      "description": "Function to print a spruce tree",
+      "code": "def spruce(height):\n    print(\"a spruce!\")\n    for i in range(1, height + 1):\n        print(\" \" * (height - i) + \"*\" * (i * 2 - 1))\n    print(\" \" * (height - 1) + \"*\")\n\nif __name__ == \"__main__\":\n    spruce(5)"
+    },
+    {
+      "id": "part04-09",
+      "name": "Greatest Number",
+      "part": 4,
+      "number": 9,
+      "description": "Function to return the greatest of three numbers",
+      "code": "def greatest_number(a, b, c):\n    return max(a, b, c)\n\nif __name__ == \"__main__\":\n    print(greatest_number(3, 5, 7))"
+    },
+    {
+      "id": "part04-10",
+      "name": "Same Characters",
+      "part": 4,
+      "number": 10,
+      "description": "Function to check if characters at indices are the same",
+      "code": "def same_chars(word, index1, index2):\n    if index1 >= len(word) or index2 >= len(word):\n        return False\n    return word[index1] == word[index2]\n\nif __name__ == \"__main__\":\n    print(same_chars(\"coder\", 1, 3))"
+    },
+    {
+      "id": "part04-11",
+      "name": "First, Second and Last",
+      "part": 4,
+      "number": 11,
+      "description": "Functions to get first, second and last word from a sentence",
+      "code": "def first_word(sentence):\n    return sentence.split()[0]\n\ndef second_word(sentence):\n    return sentence.split()[1]\n\ndef last_word(sentence):\n    return sentence.split()[-1]\n\nif __name__ == \"__main__\":\n    sentence = \"once upon a time there was a programmer\"\n    print(first_word(sentence))\n    print(second_word(sentence))\n    print(last_word(sentence))"
+    },
+    {
+      "id": "part04-12",
+      "name": "Change Value of Item",
+      "part": 4,
+      "number": 12,
+      "description": "Change values in a list based on user input",
+      "code": "my_list = [1, 2, 3, 4, 5]\n\nwhile True:\n    index = int(input(\"Index: \"))\n    if index == -1:\n        break\n    value = int(input(\"Value: \"))\n    my_list[index] = value\n    print(my_list)"
+    },
+    {
+      "id": "part04-13",
+      "name": "Add Items to List",
+      "part": 4,
+      "number": 13,
+      "description": "Add items to a list based on user input",
+      "code": "count = int(input(\"How many numbers: \"))\nmy_list = []\nfor i in range(count):\n    my_list.append(int(input(\"Number: \")))\nprint(my_list)"
+    },
+    {
+      "id": "part04-14",
+      "name": "Addition and Removal",
+      "part": 4,
+      "number": 14,
+      "description": "Add and remove items from a list",
+      "code": "my_list = []\n\nwhile True:\n    print(f\"The list is now {my_list}\")\n    command = input(\"Enter command: \")\n    if command == \"d\":\n        my_list.append(len(my_list) + 1)\n    elif command == \"r\":\n        my_list.pop()\n    else:\n        print(\"Bye!\")\n        break"
+    },
+    {
+      "id": "part04-15",
+      "name": "Same Word Twice",
+      "part": 4,
+      "number": 15,
+      "description": "Count different words until a word is repeated",
+      "code": "words = []\nwhile True:\n    word = input(\"Word: \")\n    if word in words:\n        break\n    words.append(word)\nprint(f\"You typed in {len(words)} different words\")"
+    },
+    {
+      "id": "part04-16",
+      "name": "List Twice",
+      "part": 4,
+      "number": 16,
+      "description": "Print list in original and sorted order",
+      "code": "my_list = []\nwhile True:\n    num = int(input(\"Number: \"))\n    if num == 0:\n        print(\"Bye!\")\n        break\n    my_list.append(num)\n    print(f\"The list now: {my_list}\")\n    print(f\"The list in order: {sorted(my_list)}\")"
+    },
+    {
+      "id": "part04-17",
+      "name": "Length of List",
+      "part": 4,
+      "number": 17,
+      "description": "Function to return length of a list",
+      "code": "def length(items: list):\n    return len(items)\n\nif __name__ == \"__main__\":\n    print(length([1, 2, 3]))"
+    },
+    {
+      "id": "part04-18",
+      "name": "Mean",
+      "part": 4,
+      "number": 18,
+      "description": "Function to calculate mean of a list",
+      "code": "def mean(numbers: list):\n    return sum(numbers) / len(numbers)\n\nif __name__ == \"__main__\":\n    print(mean([1, 2, 3, 4, 5]))"
+    },
+    {
+      "id": "part04-19",
+      "name": "Range of List",
+      "part": 4,
+      "number": 19,
+      "description": "Function to calculate range of a list",
+      "code": "def range_of_list(items: list):\n    return max(items) - min(items)\n\nif __name__ == \"__main__\":\n    print(range_of_list([1, 7, 3, 5]))"
+    },
+    {
+      "id": "part04-20",
+      "name": "Star-studded",
+      "part": 4,
+      "number": 20,
+      "description": "Print each character followed by a star",
+      "code": "word = input(\"Word: \")\nfor char in word:\n    print(char)\n    print(\"*\")"
+    },
+    {
+      "id": "part04-21",
+      "name": "Negative to Positive",
+      "part": 4,
+      "number": 21,
+      "description": "Print numbers from negative to positive",
+      "code": "n = int(input(\"Number: \"))\nfor i in range(-n, n + 1):\n    if i != 0:\n        print(i)"
+    },
+    {
+      "id": "part04-22",
+      "name": "List of Stars",
+      "part": 4,
+      "number": 22,
+      "description": "Function to print stars based on list values",
+      "code": "def list_of_stars(numbers: list):\n    for n in numbers:\n        print(\"*\" * n)\n\nif __name__ == \"__main__\":\n    list_of_stars([3, 7, 1, 5])"
+    },
+    {
+      "id": "part04-23",
+      "name": "Anagrams",
+      "part": 4,
+      "number": 23,
+      "description": "Function to check if two strings are anagrams",
+      "code": "def anagrams(s1, s2):\n    return sorted(s1) == sorted(s2)\n\nif __name__ == \"__main__\":\n    print(anagrams(\"house\", \"esuoh\"))"
+    },
+    {
+      "id": "part04-24",
+      "name": "Palindromes",
+      "part": 4,
+      "number": 24,
+      "description": "Function to check if a word is a palindrome",
+      "code": "def palindromes(word):\n    return word == word[::-1]\n\nwhile True:\n    word = input(\"Word: \")\n    if palindromes(word):\n        print(f\"{word} is a palindrome!\")\n        break\n    else:\n        print(\"that wasn't a palindrome\")"
+    },
+    {
+      "id": "part04-25",
+      "name": "Sum of Positives",
+      "part": 4,
+      "number": 25,
+      "description": "Function to sum positive numbers in a list",
+      "code": "def sum_of_positives(my_list: list):\n    return sum(x for x in my_list if x > 0)\n\nif __name__ == \"__main__\":\n    print(sum_of_positives([1, -2, 3, -4, 5]))"
+    },
+    {
+      "id": "part04-26",
+      "name": "Even Numbers",
+      "part": 4,
+      "number": 26,
+      "description": "Function to return even numbers from a list",
+      "code": "def even_numbers(my_list: list):\n    return [x for x in my_list if x % 2 == 0]\n\nif __name__ == \"__main__\":\n    print(even_numbers([1, 2, 3, 4, 5, 6]))"
+    },
+    {
+      "id": "part04-27",
+      "name": "Sum of Lists",
+      "part": 4,
+      "number": 27,
+      "description": "Function to sum two lists element by element",
+      "code": "def list_sum(list1: list, list2: list):\n    return [a + b for a, b in zip(list1, list2)]\n\nif __name__ == \"__main__\":\n    print(list_sum([1, 2, 3], [4, 5, 6]))"
+    },
+    {
+      "id": "part04-28",
+      "name": "Distinct Numbers",
+      "part": 4,
+      "number": 28,
+      "description": "Function to return distinct numbers sorted",
+      "code": "def distinct_numbers(my_list: list):\n    seen = []\n    for x in my_list:\n        if x not in seen:\n            seen.append(x)\n    return sorted(seen)\n\nif __name__ == \"__main__\":\n    print(distinct_numbers([1, 2, 3, 1, 2, 3]))"
+    },
+    {
+      "id": "part04-29",
+      "name": "Length of Longest",
+      "part": 4,
+      "number": 29,
+      "description": "Function to return length of longest string",
+      "code": "def length_of_longest(my_list: list):\n    return max(len(s) for s in my_list)\n\nif __name__ == \"__main__\":\n    print(length_of_longest([\"Alan\", \"Grace\", \"Frances\"]))"
+    },
+    {
+      "id": "part04-30",
+      "name": "Shortest in List",
+      "part": 4,
+      "number": 30,
+      "description": "Function to return the shortest string",
+      "code": "def shortest(my_list: list):\n    return min(my_list, key=len)\n\nif __name__ == \"__main__\":\n    print(shortest([\"Alan\", \"Susan\", \"Kim\"]))"
+    },
+    {
+      "id": "part04-31",
+      "name": "All Longest in List",
+      "part": 4,
+      "number": 31,
+      "description": "Function to return all longest strings",
+      "code": "def all_the_longest(my_list: list):\n    max_len = max(len(s) for s in my_list)\n    return [s for s in my_list if len(s) == max_len]\n\nif __name__ == \"__main__\":\n    print(all_the_longest([\"Alan\", \"Grace\", \"Steve\", \"Susan\"]))"
+    },
+    {
+      "id": "part04-32",
+      "name": "Integers to Strings",
+      "part": 4,
+      "number": 32,
+      "description": "Function to format floats to two decimal places",
+      "code": "def formatted(my_list: list):\n    return [f\"{x:.2f}\" for x in my_list]\n\nif __name__ == \"__main__\":\n    print(formatted([1.234, 5.678, 9.0]))"
+    },
+    {
+      "id": "part04-33",
+      "name": "Everything Reversed",
+      "part": 4,
+      "number": 33,
+      "description": "Function to reverse list and each string in it",
+      "code": "def everything_reversed(my_list: list):\n    return [s[::-1] for s in my_list][::-1]\n\nif __name__ == \"__main__\":\n    print(everything_reversed([\"abc\", \"def\", \"ghi\"]))"
+    },
+    {
+      "id": "part04-34",
+      "name": "Most Common Character",
+      "part": 4,
+      "number": 34,
+      "description": "Function to find most common character",
+      "code": "def most_common_character(my_string: str):\n    return max(my_string, key=my_string.count)\n\nif __name__ == \"__main__\":\n    print(most_common_character(\"abcabca\"))"
+    },
+    {
+      "id": "part04-35",
+      "name": "No Vowels Allowed",
+      "part": 4,
+      "number": 35,
+      "description": "Function to remove vowels from a string",
+      "code": "def no_vowels(my_string: str):\n    return \"\".join(c for c in my_string if c not in \"aeiou\")\n\nif __name__ == \"__main__\":\n    print(no_vowels(\"testword\"))"
+    },
+    {
+      "id": "part04-36",
+      "name": "No Shouting Allowed",
+      "part": 4,
+      "number": 36,
+      "description": "Function to remove all uppercase strings",
+      "code": "def no_shouting(my_list: list):\n    return [s for s in my_list if not s.isupper()]\n\nif __name__ == \"__main__\":\n    print(no_shouting([\"FIRST\", \"second\", \"THIRD\", \"fourth\"]))"
+    },
+    {
+      "id": "part04-37",
+      "name": "Neighbours in List",
+      "part": 4,
+      "number": 37,
+      "description": "Function to find longest series of neighbours",
+      "code": "def longest_series_of_neighbours(my_list: list):\n    if len(my_list) == 0:\n        return 0\n    max_length = 1\n    current_length = 1\n    for i in range(1, len(my_list)):\n        if my_list[i] == my_list[i-1] + 1:\n            current_length += 1\n            max_length = max(max_length, current_length)\n        else:\n            current_length = 1\n    return max_length\n\nif __name__ == \"__main__\":\n    print(longest_series_of_neighbours([1, 2, 3, 5, 6, 9, 10]))"
+    },
+    {
+      "id": "part04-38",
+      "name": "Grade Statistics",
+      "part": 4,
+      "number": 38,
+      "description": "Program to calculate grade statistics",
+      "code": "def grade(points):\n    if points < 15:\n        return 0\n    elif points < 18:\n        return 1\n    elif points < 21:\n        return 2\n    elif points < 24:\n        return 3\n    elif points < 28:\n        return 4\n    else:\n        return 5\n\nscores = []\nwhile True:\n    line = input(\"Exam points and exercises completed: \")\n    if line == \"\":\n        break\n    parts = line.split()\n    exam_points = int(parts[0])\n    exercises = int(parts[1])\n    exercise_points = exercises // 10\n    total = exam_points + exercise_points\n    scores.append((total, exam_points))\n\nif scores:\n    total_points = [s[0] for s in scores]\n    grades = [grade(s[0]) if s[1] >= 10 else 0 for s in scores]\n    \n    print(\"Statistics:\")\n    print(f\"Points average: {sum(total_points) / len(total_points):.1f}\")\n    passed = sum(1 for g in grades if g > 0)\n    print(f\"Pass percentage: {100 * passed / len(grades):.1f}\")\n    print(\"Grade distribution:\")\n    for g in range(5, -1, -1):\n        count = grades.count(g)\n        print(f\"  {g}: {'*' * count}\")"
+    },
+    {
       "id": "part08-01",
       "name": "Smallest Average",
       "part": 8,
