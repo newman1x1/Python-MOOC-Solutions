@@ -427,6 +427,278 @@
       "code": "print(\"Please type in integer numbers. Type in 0 to finish.\")\n\ncount = 0\ntotal = 0\npositive = 0\nnegative = 0\n\nwhile True:\n    number = int(input(\"Number: \"))\n    if number == 0:\n        break\n    count += 1\n    total += number\n    if number > 0:\n        positive += 1\n    else:\n        negative += 1\n\nprint(\"Numbers typed in \" + str(count))\nprint(\"The sum of the numbers is \" + str(total))\nprint(\"The mean of the numbers is \" + str(total / count))\nprint(\"Positive numbers \" + str(positive))\nprint(\"Negative numbers \" + str(negative))"
     },
     {
+      "id": "part03-01",
+      "name": "Print Numbers",
+      "part": 3,
+      "number": 1,
+      "description": "Print even numbers from 2 to 30",
+      "code": "i = 2\nwhile i <= 30:\n    print(i)\n    i += 2"
+    },
+    {
+      "id": "part03-02",
+      "name": "Countdown",
+      "part": 3,
+      "number": 2,
+      "description": "Countdown from a number to 1",
+      "code": "number = int(input(\"Please type in a number: \"))\nprint(\"Are you ready?\")\nwhile number > 0:\n    print(number)\n    number -= 1\nprint(\"Now!\")"
+    },
+    {
+      "id": "part03-03",
+      "name": "Numbers",
+      "part": 3,
+      "number": 3,
+      "description": "Print numbers from 1 to n-1",
+      "code": "number = int(input(\"Please type in a number: \"))\ni = 1\nwhile i < number:\n    print(i)\n    i += 1"
+    },
+    {
+      "id": "part03-04",
+      "name": "Powers of Two",
+      "part": 3,
+      "number": 4,
+      "description": "Print powers of 2 up to a limit",
+      "code": "number = int(input(\"Upper limit: \"))\npower = 1\nwhile power <= number:\n    print(power)\n    power *= 2"
+    },
+    {
+      "id": "part03-05",
+      "name": "Powers of Base N",
+      "part": 3,
+      "number": 5,
+      "description": "Print powers of n up to a limit",
+      "code": "limit = int(input(\"Upper limit: \"))\nbase = int(input(\"Base: \"))\npower = 1\nwhile power <= limit:\n    print(power)\n    power *= base"
+    },
+    {
+      "id": "part03-06",
+      "name": "Consecutive Sum v1",
+      "part": 3,
+      "number": 6,
+      "description": "Sum consecutive integers until reaching limit",
+      "code": "limit = int(input(\"Upper limit: \"))\ntotal = 0\ni = 1\nwhile total < limit:\n    total += i\n    i += 1\nprint(total)"
+    },
+    {
+      "id": "part03-07",
+      "name": "Consecutive Sum v2",
+      "part": 3,
+      "number": 7,
+      "description": "Show calculation of consecutive sum",
+      "code": "limit = int(input(\"Upper limit: \"))\ntotal = 0\ni = 1\nparts = []\nwhile total < limit:\n    total += i\n    parts.append(str(i))\n    i += 1\nprint(\"The consecutive sum: \" + \" + \".join(parts) + \" = \" + str(total))"
+    },
+    {
+      "id": "part03-08",
+      "name": "String Multiplied",
+      "part": 3,
+      "number": 8,
+      "description": "Multiply a string by a number",
+      "code": "word = input(\"Please type in a word: \")\ntimes = int(input(\"Please type in a number: \"))\nprint(word * times)"
+    },
+    {
+      "id": "part03-09",
+      "name": "Longer String",
+      "part": 3,
+      "number": 9,
+      "description": "Find which string is longer",
+      "code": "word1 = input(\"Please type in string 1: \")\nword2 = input(\"Please type in string 2: \")\nif len(word1) > len(word2):\n    print(word1 + \" is longer\")\nelif len(word2) > len(word1):\n    print(word2 + \" is longer\")\nelse:\n    print(\"The strings are equally long\")"
+    },
+    {
+      "id": "part03-10",
+      "name": "End to Beginning",
+      "part": 3,
+      "number": 10,
+      "description": "Print characters from end to beginning",
+      "code": "word = input(\"Please type in a word: \")\ni = len(word) - 1\nwhile i >= 0:\n    print(word[i])\n    i -= 1"
+    },
+    {
+      "id": "part03-11",
+      "name": "Second and Second to Last",
+      "part": 3,
+      "number": 11,
+      "description": "Compare second and second-to-last characters",
+      "code": "word = input(\"Please type in a word: \")\nif word[1] == word[-2]:\n    print(\"The second and the second to last characters are \" + word[1])\nelse:\n    print(\"The second and the second to last characters are different\")"
+    },
+    {
+      "id": "part03-12",
+      "name": "Line of Hashes",
+      "part": 3,
+      "number": 12,
+      "description": "Print a line of hash characters",
+      "code": "length = int(input(\"Length: \"))\nprint(\"#\" * length)"
+    },
+    {
+      "id": "part03-13",
+      "name": "Rectangle of Hashes",
+      "part": 3,
+      "number": 13,
+      "description": "Print a rectangle of hash characters",
+      "code": "width = int(input(\"Width: \"))\nheight = int(input(\"Height: \"))\ni = 0\nwhile i < height:\n    print(\"#\" * width)\n    i += 1"
+    },
+    {
+      "id": "part03-14",
+      "name": "Underlining",
+      "part": 3,
+      "number": 14,
+      "description": "Print words with underlines",
+      "code": "while True:\n    word = input(\"Please type in a word: \")\n    if word == \"\":\n        break\n    print(word)\n    print(\"-\" * len(word))"
+    },
+    {
+      "id": "part03-15",
+      "name": "Right Aligned",
+      "part": 3,
+      "number": 15,
+      "description": "Right-align a word in 20 characters",
+      "code": "word = input(\"Please type in a word: \")\nprint(\"*\" * (20 - len(word)) + word)"
+    },
+    {
+      "id": "part03-16",
+      "name": "Framed Word",
+      "part": 3,
+      "number": 16,
+      "description": "Print a word in a frame of 30 characters",
+      "code": "word = input(\"Word: \")\npadding = (28 - len(word)) // 2\nprint(\"*\" * 30)\nprint(\"*\" + \" \" * padding + word + \" \" * (28 - padding - len(word)) + \"*\")\nprint(\"*\" * 30)"
+    },
+    {
+      "id": "part03-17",
+      "name": "Substrings Part 1",
+      "part": 3,
+      "number": 17,
+      "description": "Print substrings from start",
+      "code": "word = input(\"Please type in a word: \")\ni = 1\nwhile i <= len(word):\n    print(word[0:i])\n    i += 1"
+    },
+    {
+      "id": "part03-18",
+      "name": "Substrings Part 2",
+      "part": 3,
+      "number": 18,
+      "description": "Print substrings from end",
+      "code": "word = input(\"Please type in a word: \")\ni = 1\nwhile i <= len(word):\n    print(word[-i:])\n    i += 1"
+    },
+    {
+      "id": "part03-19",
+      "name": "Does It Contain Vowels",
+      "part": 3,
+      "number": 19,
+      "description": "Check if word contains vowels a, e, o",
+      "code": "word = input(\"Please type in a word: \")\nfor vowel in \"aeo\":\n    if vowel in word:\n        print(vowel + \" found\")\n    else:\n        print(vowel + \" not found\")"
+    },
+    {
+      "id": "part03-20",
+      "name": "Find First Substring",
+      "part": 3,
+      "number": 20,
+      "description": "Find first 3-char substring starting with char",
+      "code": "word = input(\"Please type in a word: \")\nchar = input(\"Please type in a character: \")\ni = 0\nwhile i < len(word) - 2:\n    if word[i] == char:\n        print(word[i:i+3])\n        break\n    i += 1"
+    },
+    {
+      "id": "part03-21",
+      "name": "Find All Substrings",
+      "part": 3,
+      "number": 21,
+      "description": "Find all 3-char substrings starting with char",
+      "code": "word = input(\"Please type in a word: \")\nchar = input(\"Please type in a character: \")\ni = 0\nwhile i < len(word) - 2:\n    if word[i] == char:\n        print(word[i:i+3])\n    i += 1"
+    },
+    {
+      "id": "part03-22",
+      "name": "Second Occurrence",
+      "part": 3,
+      "number": 22,
+      "description": "Find the second occurrence of a substring",
+      "code": "word = input(\"Please type in a string: \")\nsubstring = input(\"Please type in a substring: \")\nfirst = word.find(substring)\nif first == -1:\n    print(\"The substring does not occur twice in the string.\")\nelse:\n    second = word.find(substring, first + len(substring))\n    if second == -1:\n        print(\"The substring does not occur twice in the string.\")\n    else:\n        print(\"The second occurrence of the substring is at index \" + str(second) + \".\")"
+    },
+    {
+      "id": "part03-23",
+      "name": "Multiplication",
+      "part": 3,
+      "number": 23,
+      "description": "Print multiplication table",
+      "code": "number = int(input(\"Please type in a number: \"))\nfor i in range(1, number + 1):\n    for j in range(1, number + 1):\n        print(str(i) + \" x \" + str(j) + \" = \" + str(i * j))"
+    },
+    {
+      "id": "part03-24",
+      "name": "First Letters of Words",
+      "part": 3,
+      "number": 24,
+      "description": "Print first letter of each word",
+      "code": "sentence = input(\"Please type in a sentence: \")\nfor word in sentence.split():\n    print(word[0])"
+    },
+    {
+      "id": "part03-25",
+      "name": "Factorial",
+      "part": 3,
+      "number": 25,
+      "description": "Calculate factorial of numbers",
+      "code": "while True:\n    number = int(input(\"Please type in a number: \"))\n    if number <= 0:\n        print(\"Thanks and bye!\")\n        break\n    factorial = 1\n    for i in range(1, number + 1):\n        factorial *= i\n    print(\"The factorial of the number \" + str(number) + \" is \" + str(factorial))"
+    },
+    {
+      "id": "part03-26",
+      "name": "Flip the Pairs",
+      "part": 3,
+      "number": 26,
+      "description": "Print numbers with pairs flipped",
+      "code": "n = int(input(\"Please type in a number: \"))\nc1 = 2\nc2 = 1\nwhile c1 <= n or c2 <= n:\n    if c1 <= n:\n        print(c1)\n    if c2 <= n:\n        print(c2)\n    c1 += 2\n    c2 += 2"
+    },
+    {
+      "id": "part03-27",
+      "name": "Taking Turns",
+      "part": 3,
+      "number": 27,
+      "description": "Print numbers alternating from start and end",
+      "code": "n = int(input(\"Please type in a number: \"))\nc1 = 1\nc2 = n\nwhile c1 <= c2:\n    if c1 <= c2:\n        print(c1)\n        c1 += 1\n    if c2 >= c1:\n        print(c2)\n        c2 -= 1"
+    },
+    {
+      "id": "part03-28",
+      "name": "Seven Brothers",
+      "part": 3,
+      "number": 28,
+      "description": "Function to print the seven brothers",
+      "code": "def seven_brothers():\n    print(\"Aapo\")\n    print(\"Eero\")\n    print(\"Juhani\")\n    print(\"Lauri\")\n    print(\"Simeoni\")\n    print(\"Timo\")\n    print(\"Tuomas\")\n\nif __name__ == \"__main__\":\n    seven_brothers()"
+    },
+    {
+      "id": "part03-29",
+      "name": "First Character",
+      "part": 3,
+      "number": 29,
+      "description": "Function to print first character",
+      "code": "def first_character(word):\n    print(word[0])\n\nif __name__ == \"__main__\":\n    first_character(\"python\")"
+    },
+    {
+      "id": "part03-30",
+      "name": "Mean",
+      "part": 3,
+      "number": 30,
+      "description": "Function to calculate mean of three numbers",
+      "code": "def mean(a, b, c):\n    print((a + b + c) / 3)\n\nif __name__ == \"__main__\":\n    mean(5, 3, 1)"
+    },
+    {
+      "id": "part03-31",
+      "name": "Print Many Times",
+      "part": 3,
+      "number": 31,
+      "description": "Function to print text multiple times",
+      "code": "def print_many_times(text, times):\n    for i in range(times):\n        print(text)\n\nif __name__ == \"__main__\":\n    print_many_times(\"test\", 5)"
+    },
+    {
+      "id": "part03-32",
+      "name": "Square of Hashes",
+      "part": 3,
+      "number": 32,
+      "description": "Function to print a square of hashes",
+      "code": "def hash_square(size):\n    for i in range(size):\n        print(\"#\" * size)\n\nif __name__ == \"__main__\":\n    hash_square(5)"
+    },
+    {
+      "id": "part03-33",
+      "name": "Chessboard",
+      "part": 3,
+      "number": 33,
+      "description": "Function to print a chessboard pattern",
+      "code": "def chessboard(size):\n    for i in range(size):\n        row = \"\"\n        for j in range(size):\n            if (i + j) % 2 == 0:\n                row += \"1\"\n            else:\n                row += \"0\"\n        print(row)\n\nif __name__ == \"__main__\":\n    chessboard(5)"
+    },
+    {
+      "id": "part03-34",
+      "name": "Word Squared",
+      "part": 3,
+      "number": 34,
+      "description": "Function to print word repeated in a square",
+      "code": "def squared(word, size):\n    repeated = word * (size * size)\n    for i in range(size):\n        print(repeated[i * size : (i + 1) * size])\n\nif __name__ == \"__main__\":\n    squared(\"ab\", 3)"
+    },
+    {
       "id": "part08-01",
       "name": "Smallest Average",
       "part": 8,
