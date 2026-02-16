@@ -21,18 +21,6 @@
 
 ---
 
-## 📸 Preview
-
-<div align="center">
-
-| Desktop View | Mobile View |
-|:------------:|:-----------:|
-| ![Desktop](https://via.placeholder.com/400x250/1a1a2e/16213e?text=Desktop+View) | ![Mobile](https://via.placeholder.com/200x350/1a1a2e/16213e?text=Mobile+View) |
-
-</div>
-
----
-
 ## ✨ Features
 
 <table>
@@ -262,3 +250,4 @@ Feel free to use, modify, and distribute as needed.
 ![Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 </div>
+
