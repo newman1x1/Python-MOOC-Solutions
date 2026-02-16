@@ -251,6 +251,182 @@
       "code": "import math\n\na = int(input(\"Value of a: \"))\nb = int(input(\"Value of b: \"))\nc = int(input(\"Value of c: \"))\n\ndiscriminant = b**2 - 4*a*c\nroot1 = (-b + math.sqrt(discriminant)) / (2*a)\nroot2 = (-b - math.sqrt(discriminant)) / (2*a)\n\nprint(\"The roots are \" + str(root1) + \" and \" + str(root2))"
     },
     {
+      "id": "part02-01",
+      "name": "Fix Syntax",
+      "part": 2,
+      "number": 1,
+      "description": "Fix the syntax errors in the given program",
+      "code": "number = int(input(\"Please type in a number: \"))\nif number > 100:\n    print(\"The number was greater than one hundred\")\n    number = number - 100\n    print(\"Now its value has decreased by one hundred\")\n    print(\"Its value is now \" + str(number))\nprint(str(number) + \" must be my lucky number!\")\nprint(\"Have a nice day!\")"
+    },
+    {
+      "id": "part02-02",
+      "name": "Number of Characters",
+      "part": 2,
+      "number": 2,
+      "description": "Print the number of characters if word length > 1",
+      "code": "word = input(\"Please type in a word: \")\nif len(word) > 1:\n    print(\"There are \" + str(len(word)) + \" letters in the word \" + word)\nprint(\"Thank you!\")"
+    },
+    {
+      "id": "part02-03",
+      "name": "Typecasting",
+      "part": 2,
+      "number": 3,
+      "description": "Split a float into integer and decimal parts",
+      "code": "number = float(input(\"Please type in a number: \"))\ninteger_part = int(number)\ndecimal_part = number - integer_part\nprint(\"Integer part: \" + str(integer_part))\nprint(\"Decimal part: \" + str(decimal_part))"
+    },
+    {
+      "id": "part02-04",
+      "name": "Age of Maturity",
+      "part": 2,
+      "number": 4,
+      "description": "Check if a person is of age (18 or older)",
+      "code": "age = int(input(\"How old are you? \"))\nif age >= 18:\n    print(\"You are of age!\")\nelse:\n    print(\"You are not of age!\")"
+    },
+    {
+      "id": "part02-05",
+      "name": "Greater or Equal",
+      "part": 2,
+      "number": 5,
+      "description": "Compare two numbers and print the greater one",
+      "code": "num1 = int(input(\"Please type in the first number: \"))\nnum2 = int(input(\"Please type in another number: \"))\nif num1 > num2:\n    print(\"The greater number was: \" + str(num1))\nelif num2 > num1:\n    print(\"The greater number was: \" + str(num2))\nelse:\n    print(\"The numbers are equal!\")"
+    },
+    {
+      "id": "part02-06",
+      "name": "Elder",
+      "part": 2,
+      "number": 6,
+      "description": "Compare ages of two people and find the elder",
+      "code": "name1 = input(\"Person 1's name: \")\nage1 = int(input(\"Person 1's age: \"))\nname2 = input(\"Person 2's name: \")\nage2 = int(input(\"Person 2's age: \"))\n\nif age1 > age2:\n    print(\"The elder is \" + name1)\nelif age2 > age1:\n    print(\"The elder is \" + name2)\nelse:\n    print(name1 + \" and \" + name2 + \" are the same age\")"
+    },
+    {
+      "id": "part02-07",
+      "name": "Alphabetically Last",
+      "part": 2,
+      "number": 7,
+      "description": "Find which word comes last alphabetically",
+      "code": "word1 = input(\"Please type in the 1st word: \")\nword2 = input(\"Please type in the 2nd word: \")\n\nif word1 == word2:\n    print(\"You gave the same word twice.\")\nelif word1 > word2:\n    print(word1 + \" comes last in alphabetical order.\")\nelse:\n    print(word2 + \" comes last in alphabetical order.\")"
+    },
+    {
+      "id": "part02-08",
+      "name": "Age Check",
+      "part": 2,
+      "number": 8,
+      "description": "Validate age with different messages",
+      "code": "age = int(input(\"What is your age? \"))\n\nif age < 0:\n    print(\"That must be a mistake\")\nelif age < 5:\n    print(\"I suspect you can't write quite yet\")\nelse:\n    print(\"Ok, you're \" + str(age) + \" years old\")"
+    },
+    {
+      "id": "part02-09",
+      "name": "Nephews",
+      "part": 2,
+      "number": 9,
+      "description": "Identify Disney character nephews",
+      "code": "name = input(\"Please type in a name: \")\n\nif name == \"Huey\" or name == \"Dewey\" or name == \"Louie\":\n    print(name + \" is one of Donald Duck's nephews\")\nelif name == \"Morty\" or name == \"Ferdie\":\n    print(name + \" is one of Mickey Mouse's nephews\")\nelse:\n    print(name + \" is not a nephew of any character I know of\")"
+    },
+    {
+      "id": "part02-10",
+      "name": "Grades and Points",
+      "part": 2,
+      "number": 10,
+      "description": "Convert exam points to grades",
+      "code": "points = int(input(\"How many points [0-100]: \"))\n\nif points < 0 or points > 100:\n    print(\"Grade: impossible!\")\nelif points < 50:\n    print(\"Grade: fail\")\nelif points < 60:\n    print(\"Grade: 1\")\nelif points < 70:\n    print(\"Grade: 2\")\nelif points < 80:\n    print(\"Grade: 3\")\nelif points < 90:\n    print(\"Grade: 4\")\nelse:\n    print(\"Grade: 5\")"
+    },
+    {
+      "id": "part02-11",
+      "name": "FizzBuzz",
+      "part": 2,
+      "number": 11,
+      "description": "Classic FizzBuzz divisibility problem",
+      "code": "number = int(input(\"Number: \"))\n\nif number % 3 == 0 and number % 5 == 0:\n    print(\"FizzBuzz\")\nelif number % 3 == 0:\n    print(\"Fizz\")\nelif number % 5 == 0:\n    print(\"Buzz\")"
+    },
+    {
+      "id": "part02-12",
+      "name": "Leap Year",
+      "part": 2,
+      "number": 12,
+      "description": "Determine if a year is a leap year",
+      "code": "year = int(input(\"Please type in a year: \"))\n\nif year % 400 == 0:\n    print(\"That year is a leap year.\")\nelif year % 100 == 0:\n    print(\"That year is not a leap year.\")\nelif year % 4 == 0:\n    print(\"That year is a leap year.\")\nelse:\n    print(\"That year is not a leap year.\")"
+    },
+    {
+      "id": "part02-13",
+      "name": "Alphabetically in the Middle",
+      "part": 2,
+      "number": 13,
+      "description": "Find the middle letter of three alphabetically",
+      "code": "letter1 = input(\"1st letter: \")\nletter2 = input(\"2nd letter: \")\nletter3 = input(\"3rd letter: \")\n\nletters = [letter1, letter2, letter3]\nletters.sort()\n\nprint(\"The letter in the middle is \" + letters[1])"
+    },
+    {
+      "id": "part02-14",
+      "name": "Gift Tax Calculator",
+      "part": 2,
+      "number": 14,
+      "description": "Calculate Finnish gift tax based on value",
+      "code": "value = int(input(\"Value of gift: \"))\n\nif value < 5000:\n    print(\"No tax!\")\nelif value <= 25000:\n    tax = 100 + (value - 5000) * 0.08\n    print(\"Amount of tax: \" + str(tax) + \" euros\")\nelif value <= 55000:\n    tax = 1700 + (value - 25000) * 0.10\n    print(\"Amount of tax: \" + str(tax) + \" euros\")\nelif value <= 200000:\n    tax = 4700 + (value - 55000) * 0.12\n    print(\"Amount of tax: \" + str(tax) + \" euros\")\nelif value <= 1000000:\n    tax = 22100 + (value - 200000) * 0.15\n    print(\"Amount of tax: \" + str(tax) + \" euros\")\nelse:\n    tax = 142100 + (value - 1000000) * 0.17\n    print(\"Amount of tax: \" + str(tax) + \" euros\")"
+    },
+    {
+      "id": "part02-15",
+      "name": "Shall We Continue",
+      "part": 2,
+      "number": 15,
+      "description": "Loop until user says no",
+      "code": "while True:\n    print(\"hi\")\n    answer = input(\"Shall we continue? \")\n    if answer == \"no\":\n        break\nprint(\"okay then\")"
+    },
+    {
+      "id": "part02-16",
+      "name": "Input Validation",
+      "part": 2,
+      "number": 16,
+      "description": "Calculate square root with input validation",
+      "code": "from math import sqrt\n\nwhile True:\n    number = int(input(\"Please type in a number: \"))\n    if number == 0:\n        print(\"Exiting...\")\n        break\n    elif number < 0:\n        print(\"Invalid number\")\n    else:\n        print(sqrt(number))"
+    },
+    {
+      "id": "part02-17",
+      "name": "Countdown",
+      "part": 2,
+      "number": 17,
+      "description": "Count down from 5 to 1 using a while loop",
+      "code": "number = 5\nprint(\"Countdown!\")\nwhile number > 0:\n    print(number)\n    number = number - 1\nprint(\"Now!\")"
+    },
+    {
+      "id": "part02-18",
+      "name": "Repeat Password",
+      "part": 2,
+      "number": 18,
+      "description": "Verify password with retry loop",
+      "code": "password = input(\"Password: \")\n\nwhile True:\n    repeat = input(\"Repeat password: \")\n    if repeat == password:\n        print(\"User account created!\")\n        break\n    else:\n        print(\"They do not match!\")"
+    },
+    {
+      "id": "part02-19",
+      "name": "PIN and Number of Attempts",
+      "part": 2,
+      "number": 19,
+      "description": "PIN validation with attempt counter",
+      "code": "attempts = 0\n\nwhile True:\n    pin = input(\"PIN: \")\n    attempts += 1\n    if pin == \"4321\":\n        if attempts == 1:\n            print(\"Correct! It only took you one single attempt!\")\n        else:\n            print(\"Correct! It took you \" + str(attempts) + \" attempts\")\n        break\n    else:\n        print(\"Wrong\")"
+    },
+    {
+      "id": "part02-20",
+      "name": "Next Leap Year",
+      "part": 2,
+      "number": 20,
+      "description": "Find the next leap year after given year",
+      "code": "year = int(input(\"Year: \"))\n\ndef is_leap_year(y):\n    if y % 400 == 0:\n        return True\n    if y % 100 == 0:\n        return False\n    if y % 4 == 0:\n        return True\n    return False\n\nnext_year = year + 1\nwhile not is_leap_year(next_year):\n    next_year += 1\n\nprint(\"The next leap year after \" + str(year) + \" is \" + str(next_year))"
+    },
+    {
+      "id": "part02-21",
+      "name": "Story",
+      "part": 2,
+      "number": 21,
+      "description": "Collect words until 'end' or duplicate entered",
+      "code": "words = []\nprevious_word = \"\"\n\nwhile True:\n    word = input(\"Please type in a word: \")\n    if word == \"end\" or word == previous_word:\n        break\n    words.append(word)\n    previous_word = word\n\nprint(\" \".join(words))"
+    },
+    {
+      "id": "part02-22",
+      "name": "Working with Numbers",
+      "part": 2,
+      "number": 22,
+      "description": "Statistics calculator for numbers",
+      "code": "print(\"Please type in integer numbers. Type in 0 to finish.\")\n\ncount = 0\ntotal = 0\npositive = 0\nnegative = 0\n\nwhile True:\n    number = int(input(\"Number: \"))\n    if number == 0:\n        break\n    count += 1\n    total += number\n    if number > 0:\n        positive += 1\n    else:\n        negative += 1\n\nprint(\"Numbers typed in \" + str(count))\nprint(\"The sum of the numbers is \" + str(total))\nprint(\"The mean of the numbers is \" + str(total / count))\nprint(\"Positive numbers \" + str(positive))\nprint(\"Negative numbers \" + str(negative))"
+    },
+    {
       "id": "part08-01",
       "name": "Smallest Average",
       "part": 8,
