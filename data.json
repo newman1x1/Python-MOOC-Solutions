@@ -1,0 +1,382 @@
+{
+  "title": "Python MOOC Solutions",
+  "description": "University of Helsinki Python Programming Course Solutions",
+  "exercises": [
+    {
+      "id": "part01-01",
+      "name": "Emoticon",
+      "part": 1,
+      "number": 1,
+      "description": "Print a smiley emoticon :-)",
+      "code": "print(\":-)\")"}
+    ,
+    {
+      "id": "part01-02",
+      "name": "Seven Brothers",
+      "part": 1,
+      "number": 2,
+      "description": "Print the seven brothers' names in alphabetical order",
+      "code": "print(\"Aapo\")\nprint(\"Eero\")\nprint(\"Juhani\")\nprint(\"Lauri\")\nprint(\"Simeoni\")\nprint(\"Timo\")\nprint(\"Tuomas\")"
+    },
+    {
+      "id": "part01-03",
+      "name": "Row Your Boat",
+      "part": 1,
+      "number": 3,
+      "description": "Print the lyrics of Row, Row, Row Your Boat",
+      "code": "print(\"Row, row, row your boat,\")\nprint(\"Gently down the stream.\")\nprint(\"Merrily, merrily, merrily, merrily,\")\nprint(\"Life is but a dream.\")"
+    },
+    {
+      "id": "part01-04",
+      "name": "Minutes in a Year",
+      "part": 1,
+      "number": 4,
+      "description": "Calculate and print the number of minutes in a year",
+      "code": "print(365 * 24 * 60)"
+    },
+    {
+      "id": "part01-05",
+      "name": "Print Code",
+      "part": 1,
+      "number": 5,
+      "description": "Print the text: print(\"Hi there!\")",
+      "code": "print(\"print(\\\"Hi there!\\\")\")"
+    },
+    {
+      "id": "part01-06",
+      "name": "Name Twice",
+      "part": 1,
+      "number": 6,
+      "description": "Ask for user's name and print it twice",
+      "code": "name = input(\"Please type in your name: \")\nprint(name)\nprint(name)"
+    },
+    {
+      "id": "part01-07",
+      "name": "Name and Exclamation Marks",
+      "part": 1,
+      "number": 7,
+      "description": "Ask for user's name and print it in format !Name!Name!",
+      "code": "name = input(\"Please type in your name: \")\nprint(\"!\" + name + \"!\" + name + \"!\")"
+    },
+    {
+      "id": "part01-08",
+      "name": "Name and Address",
+      "part": 1,
+      "number": 8,
+      "description": "Ask for name and address details, print formatted",
+      "code": "first_name = input(\"First name: \")\nlast_name = input(\"Last name: \")\nstreet_address = input(\"Street address: \")\ncity_and_postal = input(\"City and postal code: \")\nprint(first_name + \" \" + last_name)\nprint(street_address)\nprint(city_and_postal)"
+    },
+    {
+      "id": "part01-09",
+      "name": "Utterances",
+      "part": 1,
+      "number": 9,
+      "description": "Ask for 3 parts and print them joined with hyphens",
+      "code": "part1 = input(\"1st part: \")\npart2 = input(\"2nd part: \")\npart3 = input(\"3rd part: \")\nprint(part1 + \"-\" + part2 + \"-\" + part3 + \"!\")"
+    },
+    {
+      "id": "part01-10",
+      "name": "Story",
+      "part": 1,
+      "number": 10,
+      "description": "Ask for a name and birth year, print a knight story",
+      "code": "name = input(\"Please type in a name: \")\nyear = input(\"Please type in a year: \")\nprint(name + \" is a valiant knight, born in the year \" + year + \". One morning \" + name + \" woke up to an awful racket: a dragon was approaching the village. Only \" + name + \" could save the village's residents.\")"
+    },
+    {
+      "id": "part01-10b",
+      "name": "Extra Space",
+      "part": 1,
+      "number": "10b",
+      "description": "Fix extra spaces in print statements",
+      "code": "name = \"Tim Tester\"\nage = 20\nskill1 = \"python (beginner)\"\nskill2 = \"java (veteran)\"\nskill3 = \"programming (semiprofessional)\"\nlower = 2000\nupper = 3000\n\nprint(\"my name is \" + name + \", I am \" + str(age) + \" years old\")\nprint(\"\")\nprint(\"my skills are\")\nprint(\" - \" + skill1)\nprint(\" - \" + skill2)\nprint(\" - \" + skill3)\nprint(\"\")\nprint(\"I am looking for a job with a salary of \" + str(lower) + \"-\" + str(upper) + \" euros per month\")"
+    },
+    {
+      "id": "part01-11",
+      "name": "Arithmetics",
+      "part": 1,
+      "number": 11,
+      "description": "Print sum, difference, product, and quotient of x=27 and y=15",
+      "code": "x = 27\ny = 15\nprint(str(x) + \" + \" + str(y) + \" = \" + str(x + y))\nprint(str(x) + \" - \" + str(y) + \" = \" + str(x - y))\nprint(str(x) + \" * \" + str(y) + \" = \" + str(x * y))\nprint(str(x) + \" / \" + str(y) + \" = \" + str(x / y))"
+    },
+    {
+      "id": "part01-12",
+      "name": "Print a Single Line",
+      "part": 1,
+      "number": 12,
+      "description": "Print the equation on a single line",
+      "code": "print(\"5 + 8 - 4 = 9\")"
+    },
+    {
+      "id": "part01-13",
+      "name": "Times Five",
+      "part": 1,
+      "number": 13,
+      "description": "Ask for a number and print it multiplied by 5",
+      "code": "number = int(input(\"Please type in a number: \"))\nprint(str(number) + \" times 5 is \" + str(number * 5))"
+    },
+    {
+      "id": "part01-14",
+      "name": "Name and Age",
+      "part": 1,
+      "number": 14,
+      "description": "Ask for name and birth year, calculate age at end of 2021",
+      "code": "name = input(\"Please type in your name: \")\nyear = int(input(\"Which year were you born? \"))\nage = 2021 - year\nprint(\"Hi \" + name + \", you will be \" + str(age) + \" years old at the end of the year 2021\")"
+    },
+    {
+      "id": "part01-15",
+      "name": "Seconds in a Day",
+      "part": 1,
+      "number": 15,
+      "description": "Ask for number of days and print equivalent seconds",
+      "code": "days = int(input(\"How many days? \"))\nseconds = days * 24 * 60 * 60\nprint(\"Seconds in that many days: \" + str(seconds))"
+    },
+    {
+      "id": "part01-16",
+      "name": "Product",
+      "part": 1,
+      "number": 16,
+      "description": "Ask for 3 numbers and calculate their product",
+      "code": "number1 = int(input(\"Please type in the first number: \"))\nnumber2 = int(input(\"Please type in the second number: \"))\nnumber3 = int(input(\"Please type in the third number: \"))\nproduct = number1 * number2 * number3\nprint(\"The product is \" + str(product))"
+    },
+    {
+      "id": "part01-17",
+      "name": "Sum and Product",
+      "part": 1,
+      "number": 17,
+      "description": "Ask for 2 numbers and print their sum and product",
+      "code": "number1 = int(input(\"Number 1: \"))\nnumber2 = int(input(\"Number 2: \"))\nprint(\"The sum of the numbers: \" + str(number1 + number2))\nprint(\"The product of the numbers: \" + str(number1 * number2))"
+    },
+    {
+      "id": "part01-18",
+      "name": "Sum and Mean",
+      "part": 1,
+      "number": 18,
+      "description": "Ask for 4 numbers and print their sum and mean",
+      "code": "n1 = int(input(\"Number 1: \"))\nn2 = int(input(\"Number 2: \"))\nn3 = int(input(\"Number 3: \"))\nn4 = int(input(\"Number 4: \"))\ntotal = n1 + n2 + n3 + n4\nmean = total / 4\nprint(\"The sum of the numbers is \" + str(total) + \" and the mean is \" + str(mean))"
+    },
+    {
+      "id": "part01-19",
+      "name": "Food Expenditure",
+      "part": 1,
+      "number": 19,
+      "description": "Calculate daily and weekly food expenditure",
+      "code": "lunches = int(input(\"How many times a week do you eat at the student cafeteria? \"))\nlunch_price = float(input(\"The price of a typical student lunch? \"))\ngroceries = float(input(\"How much money do you spend on groceries in a week? \"))\nweekly = lunches * lunch_price + groceries\ndaily = weekly / 7\nprint(\"Daily food expenditure: \" + str(daily) + \" euros\")\nprint(\"Weekly food expenditure: \" + str(weekly) + \" euros\")"
+    },
+    {
+      "id": "part01-20",
+      "name": "Students in Groups",
+      "part": 1,
+      "number": 20,
+      "description": "Calculate how many groups are needed using ceiling division",
+      "code": "students = int(input(\"How many students on the course? \"))\nmax_size = int(input(\"Desired group size? \"))\ngroups = (students + max_size - 1) // max_size\nprint(\"Number of groups formed: \" + str(groups))"
+    },
+    {
+      "id": "part01-21",
+      "name": "Orwell",
+      "part": 1,
+      "number": 21,
+      "description": "If year is 1984, print Orwell",
+      "code": "year = int(input(\"Please type in a year: \"))\nif year == 1984:\n    print(\"Orwell\")"
+    },
+    {
+      "id": "part01-22",
+      "name": "Absolute Value",
+      "part": 1,
+      "number": 22,
+      "description": "Print the absolute value of a number",
+      "code": "number = int(input(\"Please type in a number: \"))\nif number < 0:\n    number = -number\nprint(\"The absolute value of this number is \" + str(number))"
+    },
+    {
+      "id": "part01-23",
+      "name": "Soup or No Soup",
+      "part": 1,
+      "number": 23,
+      "description": "Soup stand that refuses to serve Jerry",
+      "code": "name = input(\"Please tell me your name: \")\nif name == \"Jerry\":\n    print(\"Next please!\")\nelse:\n    portions = int(input(\"How many portions of soup? \"))\n    total = portions * 5.90\n    print(\"The total cost is \" + str(total))\n    print(\"Next please!\")"
+    },
+    {
+      "id": "part01-24",
+      "name": "Order of Magnitude",
+      "part": 1,
+      "number": 24,
+      "description": "Check if number is smaller than 1000, 100, and 10",
+      "code": "number = int(input(\"Please type in a number: \"))\nif number < 1000:\n    print(\"This number is smaller than 1000\")\nif number < 100:\n    print(\"This number is smaller than 100\")\nif number < 10:\n    print(\"This number is smaller than 10\")\nprint(\"Thank you!\")"
+    },
+    {
+      "id": "part01-25",
+      "name": "Calculator",
+      "part": 1,
+      "number": 25,
+      "description": "Simple calculator with add, subtract, multiply",
+      "code": "number1 = int(input(\"Number 1: \"))\nnumber2 = int(input(\"Number 2: \"))\noperation = input(\"Operation: \")\nif operation == \"add\":\n    print(str(number1) + \" + \" + str(number2) + \" = \" + str(number1 + number2))\nelif operation == \"subtract\":\n    print(str(number1) + \" - \" + str(number2) + \" = \" + str(number1 - number2))\nelif operation == \"multiply\":\n    print(str(number1) + \" * \" + str(number2) + \" = \" + str(number1 * number2))"
+    },
+    {
+      "id": "part01-26",
+      "name": "Temperatures",
+      "part": 1,
+      "number": 26,
+      "description": "Convert Fahrenheit to Celsius",
+      "code": "fahrenheit = int(input(\"Please type in a temperature (F): \"))\ncelsius = (fahrenheit - 32) * 5 / 9\nprint(str(fahrenheit) + \" degrees Fahrenheit equals \" + str(celsius) + \" degrees Celsius\")\nif celsius < 0:\n    print(\"Brr! It's cold in here!\")"
+    },
+    {
+      "id": "part01-27",
+      "name": "Daily Wages",
+      "part": 1,
+      "number": 27,
+      "description": "Calculate daily wage (double on Sunday)",
+      "code": "hourly_wage = float(input(\"Hourly wage: \"))\nhours = int(input(\"Hours worked: \"))\nday = input(\"Day of the week: \")\nif day == \"Sunday\":\n    daily = hourly_wage * hours * 2\nelse:\n    daily = hourly_wage * hours\nprint(\"Daily wages: \" + str(daily) + \" euros\")"
+    },
+    {
+      "id": "part01-28",
+      "name": "Loyalty Bonus",
+      "part": 1,
+      "number": 28,
+      "description": "Calculate loyalty bonus (10% if <100 points, 15% if >=100)",
+      "code": "points = int(input(\"How many points are on your card? \"))\nif points < 100:\n    print(\"Your bonus is 10 %\")\nelse:\n    print(\"Your bonus is 15 %\")"
+    },
+    {
+      "id": "part01-29",
+      "name": "What to Wear Tomorrow",
+      "part": 1,
+      "number": 29,
+      "description": "Suggest clothing based on temperature and rain",
+      "code": "temperature = int(input(\"What is the weather forecast for tomorrow?\\nTemperature: \"))\nrain = input(\"Will it rain (yes/no): \")\nprint(\"Wear jeans and a T-shirt\")\nif temperature <= 20:\n    print(\"I recommend a jumper as well\")\nif temperature <= 10:\n    print(\"Take a jacket with you\")\nif temperature <= 5:\n    print(\"Make it a warm coat, actually\")\n    print(\"I think gloves are in order\")\nif rain == \"yes\":\n    print(\"Don't forget your umbrella!\")"
+    },
+    {
+      "id": "part01-30",
+      "name": "Quadratic Formula",
+      "part": 1,
+      "number": 30,
+      "description": "Solve quadratic equation using the quadratic formula",
+      "code": "import math\n\na = int(input(\"Value of a: \"))\nb = int(input(\"Value of b: \"))\nc = int(input(\"Value of c: \"))\n\ndiscriminant = b**2 - 4*a*c\nroot1 = (-b + math.sqrt(discriminant)) / (2*a)\nroot2 = (-b - math.sqrt(discriminant)) / (2*a)\n\nprint(\"The roots are \" + str(root1) + \" and \" + str(root2))"
+    },
+    {
+      "id": "part08-01",
+      "name": "Smallest Average",
+      "part": 8,
+      "number": 1,
+      "description": "Return the dictionary with the smallest average of results",
+      "code": "def smallest_average(person1: dict, person2: dict, person3: dict):\n    def avg(person):\n        return (person[\"result1\"] + person[\"result2\"] + person[\"result3\"]) / 3\n    \n    persons = [person1, person2, person3]\n    return min(persons, key=avg)"
+    },
+    {
+      "id": "part08-02",
+      "name": "Row Sums",
+      "part": 8,
+      "number": 2,
+      "description": "Add the sum of each row as the last element",
+      "code": "def row_sums(matrix: list):\n    for row in matrix:\n        row.append(sum(row))"
+    },
+    {
+      "id": "part08-03",
+      "name": "List Years",
+      "part": 8,
+      "number": 3,
+      "description": "Return a sorted list of years from date objects",
+      "code": "from datetime import date\n\ndef list_years(dates: list):\n    years = [d.year for d in dates]\n    return sorted(years)"
+    },
+    {
+      "id": "part08-04",
+      "name": "Shopping List",
+      "part": 8,
+      "number": 4,
+      "description": "Return the total number of units in a ShoppingList",
+      "code": "def total_units(my_list):\n    total = 0\n    for item in my_list.entries():\n        total += item[1]\n    return total"
+    },
+    {
+      "id": "part08-05",
+      "name": "Book",
+      "part": 8,
+      "number": 5,
+      "description": "Create a Book class with name, author, genre, year",
+      "code": "class Book:\n    def __init__(self, name: str, author: str, genre: str, year: int):\n        self.name = name\n        self.author = author\n        self.genre = genre\n        self.year = year"
+    },
+    {
+      "id": "part08-06",
+      "name": "Three Classes",
+      "part": 8,
+      "number": 6,
+      "description": "Create Checklist, Customer, and Cable classes",
+      "code": "class Checklist:\n    def __init__(self, header: str, entries: list):\n        self.header = header\n        self.entries = entries\n\nclass Customer:\n    def __init__(self, id: str, balance: float, discount: int):\n        self.id = id\n        self.balance = balance\n        self.discount = discount\n\nclass Cable:\n    def __init__(self, model: str, length: float, max_speed: int, bidirectional: bool):\n        self.model = model\n        self.length = length\n        self.max_speed = max_speed\n        self.bidirectional = bidirectional"
+    },
+    {
+      "id": "part08-07",
+      "name": "Pet",
+      "part": 8,
+      "number": 7,
+      "description": "Create a Pet class and new_pet function",
+      "code": "class Pet:\n    def __init__(self, name: str, species: str, year_of_birth: int):\n        self.name = name\n        self.species = species\n        self.year_of_birth = year_of_birth\n\ndef new_pet(name: str, species: str, year_of_birth: int):\n    return Pet(name, species, year_of_birth)"
+    },
+    {
+      "id": "part08-08",
+      "name": "Older Book",
+      "part": 8,
+      "number": 8,
+      "description": "Compare two books and print which is older",
+      "code": "class Book:\n    def __init__(self, name: str, author: str, genre: str, year: int):\n        self.name = name\n        self.author = author\n        self.genre = genre\n        self.year = year\n\ndef older_book(book1: Book, book2: Book):\n    if book1.year < book2.year:\n        print(book1.name + \" is older, it was published in \" + str(book1.year))\n    elif book2.year < book1.year:\n        print(book2.name + \" is older, it was published in \" + str(book2.year))\n    else:\n        print(book1.name + \" and \" + book2.name + \" were published in \" + str(book1.year))"
+    },
+    {
+      "id": "part08-09",
+      "name": "Books of Genre",
+      "part": 8,
+      "number": 9,
+      "description": "Return a list of books matching the given genre",
+      "code": "class Book:\n    def __init__(self, name: str, author: str, genre: str, year: int):\n        self.name = name\n        self.author = author\n        self.genre = genre\n        self.year = year\n\ndef books_of_genre(books: list, genre: str):\n    return [book for book in books if book.genre == genre]"
+    },
+    {
+      "id": "part08-10",
+      "name": "Decreasing Counter",
+      "part": 8,
+      "number": 10,
+      "description": "Complete the DecreasingCounter class",
+      "code": "class DecreasingCounter:\n    def __init__(self, initial_value: int):\n        self.value = initial_value\n        self.initial_value = initial_value\n\n    def print_value(self):\n        print(\"value:\", self.value)\n\n    def decrease(self):\n        if self.value > 0:\n            self.value -= 1\n\n    def set_to_zero(self):\n        self.value = 0\n\n    def reset_original_value(self):\n        self.value = self.initial_value"
+    },
+    {
+      "id": "part08-11",
+      "name": "First and Last Name",
+      "part": 8,
+      "number": 11,
+      "description": "Create Person class with name parsing methods",
+      "code": "class Person:\n    def __init__(self, name: str):\n        self.name = name\n\n    def return_first_name(self):\n        return self.name.split()[0]\n\n    def return_last_name(self):\n        return self.name.split()[-1]"
+    },
+    {
+      "id": "part08-12",
+      "name": "Number Stats",
+      "part": 8,
+      "number": 12,
+      "description": "Create NumberStats class for tracking number statistics",
+      "code": "class NumberStats:\n    def __init__(self):\n        self.numbers = []\n\n    def add_number(self, number: int):\n        self.numbers.append(number)\n\n    def count_numbers(self):\n        return len(self.numbers)\n\n    def get_sum(self):\n        return sum(self.numbers) if self.numbers else 0\n\n    def average(self):\n        if not self.numbers:\n            return 0\n        return sum(self.numbers) / len(self.numbers)\n\nall_stats = NumberStats()\neven_stats = NumberStats()\nodd_stats = NumberStats()\n\nwhile True:\n    number = int(input(\"Please type in integer numbers: \"))\n    if number == -1:\n        break\n    all_stats.add_number(number)\n    if number % 2 == 0:\n        even_stats.add_number(number)\n    else:\n        odd_stats.add_number(number)\n\nprint(\"Sum of numbers:\", all_stats.get_sum())\nprint(\"Mean of numbers:\", all_stats.average())\nprint(\"Sum of even numbers:\", even_stats.get_sum())\nprint(\"Sum of odd numbers:\", odd_stats.get_sum())"
+    },
+    {
+      "id": "part08-13",
+      "name": "Stopwatch",
+      "part": 8,
+      "number": 13,
+      "description": "Create a Stopwatch class with MM:SS format",
+      "code": "class Stopwatch:\n    def __init__(self):\n        self.seconds = 0\n        self.minutes = 0\n\n    def __str__(self):\n        return f\"{self.minutes:02d}:{self.seconds:02d}\"\n\n    def tick(self):\n        self.seconds += 1\n        if self.seconds == 60:\n            self.seconds = 0\n            self.minutes += 1\n        if self.minutes == 60:\n            self.minutes = 0"
+    },
+    {
+      "id": "part08-14",
+      "name": "Clock",
+      "part": 8,
+      "number": 14,
+      "description": "Create a Clock class with HH:MM:SS format",
+      "code": "class Clock:\n    def __init__(self, hours: int, minutes: int, seconds: int):\n        self.hours = hours\n        self.minutes = minutes\n        self.seconds = seconds\n\n    def __str__(self):\n        return f\"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}\"\n\n    def tick(self):\n        self.seconds += 1\n        if self.seconds == 60:\n            self.seconds = 0\n            self.minutes += 1\n        if self.minutes == 60:\n            self.minutes = 0\n            self.hours += 1\n        if self.hours == 24:\n            self.hours = 0\n\n    def set(self, hours: int, minutes: int):\n        self.hours = hours\n        self.minutes = minutes\n        self.seconds = 0"
+    },
+    {
+      "id": "part08-15",
+      "name": "LunchCard",
+      "part": 8,
+      "number": 15,
+      "description": "Create a LunchCard class with balance and meal methods",
+      "code": "class LunchCard:\n    def __init__(self, balance: float):\n        self.balance = balance\n\n    def __str__(self):\n        return f\"The balance is {self.balance} euros\"\n\n    def eat_lunch(self):\n        if self.balance >= 2.60:\n            self.balance -= 2.60\n\n    def eat_special(self):\n        if self.balance >= 4.60:\n            self.balance -= 4.60\n\n    def deposit_money(self, amount: float):\n        if amount > 0:\n            self.balance += amount\n\npeter = LunchCard(20)\ngrace = LunchCard(30)\npeter.eat_special()\ngrace.eat_lunch()\nprint(\"Peter: \" + str(peter))\nprint(\"Grace: \" + str(grace))\npeter.deposit_money(20)\ngrace.eat_special()\nprint(\"Peter: \" + str(peter))\nprint(\"Grace: \" + str(grace))\npeter.eat_lunch()\npeter.eat_lunch()\ngrace.deposit_money(50)\nprint(\"Peter: \" + str(peter))\nprint(\"Grace: \" + str(grace))"
+    },
+    {
+      "id": "part08-16",
+      "name": "Series",
+      "part": 8,
+      "number": 16,
+      "description": "Create a Series class with ratings",
+      "code": "class Series:\n    def __init__(self, title: str, seasons: int, genres: list):\n        self.title = title\n        self.seasons = seasons\n        self.genres = genres\n        self.ratings = []\n\n    def __str__(self):\n        genre_str = \", \".join(self.genres)\n        if not self.ratings:\n            rating_str = \"no ratings\"\n        else:\n            avg = sum(self.ratings) / len(self.ratings)\n            rating_str = f\"{len(self.ratings)} ratings, average {avg:.1f} points\"\n        return f\"{self.title} ({self.seasons} seasons)\\ngenres: {genre_str}\\n{rating_str}\"\n\n    def rate(self, rating: int):\n        self.ratings.append(rating)\n\ndef minimum_grade(rating: float, series_list: list):\n    return [s for s in series_list if s.ratings and sum(s.ratings)/len(s.ratings) >= rating]"
+    }
+  ]
+}
